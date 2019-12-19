@@ -8,6 +8,7 @@
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
     />
+    <link rel="stylesheet" href="css/styles.css">
     <title>Chats | Kakao Clone</title>
 </head>
 <body>
@@ -28,27 +29,34 @@
             <h1 class="header__title">Chats</h1>
         </div>
         <div class="header__header-column">
-            <span class="header__icon"></span>
+            <span class="header__icon">
                 <i class="fas fa-search"></i>
-            <span class="header__icon"></span>
+            </span>
+            <span class="header__icon">
                 <i class="far fa-comment"></i>
-            <span class="header__icon"></span>
+            </span>
+            <span class="header__icon">
                 <i class="fas fa-cog"></i>
+            </span>
         </div>
     </header>
     <main class="chats">
         <ul class="chats__list">
             <li class="chats__chat chat">
                 <a href = "chat.html">
-                    <div class="chat__column">
-                        <img class="chat__avatar g-avatar" src="images/avatar.png">
-                        <div class="chat__content">
-                            <span class="chat__username">Dayoung</span>
-                            <span class="chat__preview">Going home!</span>
+                    <div class="chats__chat friend friend__lg">
+                        <div class="friend__column">
+                            <img src="images/avatar.png" class="m-avatar friend__avatar">
+                            <div class="friend__content">
+                                <span class="friend__name">Dayoung</span>
+                                <span class="friend__bottom-text">Halo Halo</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="chat__column">
-                        <span class="chat__timestamp">Yesterday</span>
+                        <div class="friend__column">
+                            <span class="chat__timestamp">
+                                March 8
+                            </span>
+                        </div>
                     </div>
                 </a>
             </li>
@@ -63,6 +71,7 @@
             </li>
             <li class="nav__list-item">
                 <a href="index.html" class="nav__list-link">
+                    <div class="nav__badge">8</div>
                     <i class="fas fa-comment"></i>
                 </a>
             </li>
